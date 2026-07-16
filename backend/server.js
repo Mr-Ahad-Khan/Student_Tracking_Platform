@@ -23,7 +23,7 @@ app.use(
   cors({
     origin:
       process.env.FRONTEND_URL ||
-      "https://ahadttutrackplatform-kf02tdh2o-ahad998867-4400s-projects.vercel.app/",
+      "https://ahadttutrackplatform-kf02tdh2o-ahad998867-4400s-projects.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
