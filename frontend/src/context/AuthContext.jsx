@@ -15,8 +15,10 @@ export const AuthProvider = ({ children }) => {
         if (response.data?.user) {
           setUser(response.data.user);
         }
-    } catch {
-      console.log('Session check: No active session active or backend unreachable.');
+    } catch (err) {
+      if (err.response?.status !== 401) {
+        console.error('Session check failed:', err.message);
+      }
       setUser(null);
       } finally {
         setLoading(false);
