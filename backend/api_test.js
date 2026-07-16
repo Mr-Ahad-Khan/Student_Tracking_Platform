@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Target API base URL
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "studenttrackingplatform-production.up.railway.app";
 
 // Set up axios defaults to retain cookies across requests
 const client = axios.create({
